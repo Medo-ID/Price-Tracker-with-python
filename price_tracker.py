@@ -39,7 +39,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('medoxelor@gmail.com', 'Medo@Gamer99')
+    server.login('your email here', 'password here')
 
     subject = 'Price has been changed'
     body = 'Check the link https://store.hp.com/FranceStore/Merch/Product.aspx?id=16X94EA&opt=ABF&sel=NTB&lang=fr-FR&jumpID=af_hj7vryau8t/sf:_sku:16X94EA&utm_source=affiliate&utm_medium=cpa&utm_content=product_feed&utm_campaign=Criteo%20Display%20Retargeting%20HP'
@@ -47,12 +47,12 @@ def send_mail():
     msg = f"Subject: {subject}\n\n{body}"
 
     server.sendmail(
-        'medoxelor@gmail.com',
-        'midaghdour@gmail.com',
+        'again your email here',
+        'The email that you want to receive the message in here',
         msg
     )
 
-    print('HEY EMAIL HAS BEEN SENT SUCCESFULLY!')
+    print('HEY, MAIL HAS BEEN SENT SUCCESFULLY!')
     
     server.quit()
 
